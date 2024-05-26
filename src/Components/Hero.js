@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePic from "./Assets/profilepic.png";
+import profilePic from "./Assets/prpic.png";
 import {motion} from 'framer-motion';
 
 const container = (delay) => ({
@@ -31,7 +31,7 @@ const Hero = () => {
                        variants={container(0.5)}
                        initial="hidden"
                        animate="visible"
-                    className='bg-gradient-to-r from-pink-300 via-state-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent'>
+                       className='bg-gradient-to-r from-pink-300 via-state-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent'>
                         Full Stack Devloper</motion.span>
                         
                         <motion.p 

@@ -1,5 +1,7 @@
-import React from 'react';
+
+
 import {motion} from 'framer-motion';
+
 
 const Contact = () => {
   return (
@@ -26,6 +28,7 @@ const Contact = () => {
 
             <a href='#' className=' active:text-indigo-600 underline'>mitalipanchal111@gmail.com</a>
             {/* hover:text-indigo-600 */}
+
 
         </div>
     </div>

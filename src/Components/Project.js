@@ -1,5 +1,6 @@
 import React from 'react';
-import projectImage from './Assets/project.png';
+import projectImage from './Assets/prj.png';
+
 import {motion} from 'framer-motion';
 
 const Project = () => {
@@ -62,9 +63,9 @@ const Project = () => {
               transition={{duration: 1}}
             className='w-full max-w-xl lg:w-3/4'>
                 <h6 className='mb-2 font-semibold'>
-                    Random Gif Website
+                    Random Gif generator Website
                 </h6>
-                <p className='mb-4 text-neutral-400 ' >Hello everyone!</p>
+                <p className='mb-4 text-neutral-400 ' >In this website you can search random gif and you can also search specific gif.</p>
                 <span className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800 justify-between">HTML</span>
                 <span className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800 justify-between">CSS</span>
                 <span className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800 justify-between">JavaScript</span>

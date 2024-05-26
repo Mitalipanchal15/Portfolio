@@ -1,5 +1,6 @@
 
 // import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import About from "./Components/About";
@@ -20,7 +21,7 @@ function App() {
 <div class="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div></div>
  
   </div>
-  
+
     {/* <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-
     [radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>  */}
 
@@ -31,13 +32,25 @@ function App() {
      [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]"></div> */}
 
     <div className="container mx-auto px-8">
-       <Navbar/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navbar />}>
+          <Route path="/Hero" element={<Hero />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Technologies" element={<Technologies />} />
+          <Route path="/Experience" element={<Experience />} />
+          <Route path="/Project" element={<Project />} />
+          <Route path="*" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+       {/* <Navbar/>
        <Hero/>
        <About/>
        <Technologies/>
        <Experience/>
        <Project/>
-       <Contact/>
+       <Contact/> */}
     </div>
   </div>
 
