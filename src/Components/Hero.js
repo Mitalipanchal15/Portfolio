@@ -18,14 +18,13 @@ const Hero = () => {
             <div className='w-full lg:w-1/2'>
                 <div className='flex flex-col items-center lg:items-start'>
                     <motion.h3 
-                      // variants={container(0)}
-                      // initial={{y:10, opacity:0}}
-                      // animate={{y:0, opacity:0}}
-                      // transition={{staggerChildren:0.1}}
+                      variants={container(0)}
+                      initial="hidden"
+                      animate="visible"
                       
-                               initial={{ y: 20, opacity:0 }} 
-                               animate={{ y: 0, opacity:1 }}
-                               transition={{staggerChildren:0.1}}
+                              //  initial={{ y: 20, opacity:0 }} 
+                              //  animate={{ y: 0, opacity:1 }}
+                              //  transition={{staggerChildren:0.1}}
                     
                     className='pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl inline-block'>Mitali Panchal</motion.h3>
 
