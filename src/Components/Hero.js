@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePic from "./Assets/prpic.png";
+import profilePic from "./Assets/profilepic.png";
 import {motion} from 'framer-motion';
 
 const container = (delay) => ({
@@ -17,15 +17,17 @@ const Hero = () => {
         <div className='flex flex-wrap'>
             <div className='w-full lg:w-1/2'>
                 <div className='flex flex-col items-center lg:items-start'>
-                    <motion.h1 
-                      variants={container(0)}
-                      initial="hidden"
-                      animate="visible"
-                              //  initial={{ x: -100, opacity:0 }} 
-                              //  animate={{ x: 0, opacity:1 }}
-                              //  transition={{duration:0.5, delay:2 }}
+                    <motion.h3 
+                      // variants={container(0)}
+                      // initial={{y:10, opacity:0}}
+                      // animate={{y:0, opacity:0}}
+                      // transition={{staggerChildren:0.1}}
+                      
+                               initial={{ y: 20, opacity:0 }} 
+                               animate={{ y: 0, opacity:1 }}
+                               transition={{staggerChildren:0.1}}
                     
-                    className='pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl'>Mitali Panchal</motion.h1>
+                    className='pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl inline-block'>Mitali Panchal</motion.h3>
 
                     <motion.span 
                        variants={container(0.5)}

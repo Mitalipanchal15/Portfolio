@@ -47,7 +47,9 @@ const Experience = () => {
                     Intern - {""}
                     <span className='text-sm text-purple-100'>MindNova</span>
                 </h6>
-                <p className='mb-4 text-neutral-400 ' >Hello everyone!</p>
+                <p className='mb-4 text-neutral-400 ' >Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 <span className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800 justify-between">HTML</span>
                 <span className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800 justify-between">CSS</span>
                 <span className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800 justify-between">JavaScript</span>

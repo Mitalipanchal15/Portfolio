@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutImg from './Assets/abut.png';
+import aboutImg from './Assets/ab.png';
 import {motion} from "framer-motion";
 
 const About = () => {
@@ -31,7 +31,9 @@ const About = () => {
                 className='w-full lg:w-1/2'>
                     <div className='felx justify-center lg:justify-start'>
                         <p className='my-2 max-w-xl py-6' >
-                            Hello add text
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>
                     </div>
             </motion.div>

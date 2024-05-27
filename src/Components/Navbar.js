@@ -24,37 +24,40 @@ const Navbar = () => {
         <div className='flex flex-shrink-0 items-center'>
           <img className="mx-2 w-12" src={logo} alt='logo' />
         </div>
-        <ul className='flex space-x-4 '>
+        <motion.ul
+        initial={{ y: -100, opacity:0 }} 
+        animate={{ y: 0, opacity:1 }}
+        transition={{duration:0.5, delay:2 }}
+        className='flex space-x-4 '>
           <li>
-            <Link className='active:text-indigo-600' to="/hero">Home</Link>
+            <Link className='active:text-indigo-600 text-pink-400 ' to="/hero">Home</Link>
           </li>
           <li>
-            <Link className='active:text-indigo-600' to="/about">About</Link>
+            <Link className='active:text-indigo-600 text-pink-400 ' to="/about">About</Link>
           </li>
           <li>
-            <Link className='active:text-indigo-600' to="/technologies">Technologies</Link>
+            <Link className='active:text-indigo-600 text-pink-400 ' to="/technologies">Technologies</Link>
           </li>
           <li>
-            <Link className='active:text-indigo-600'to="/experience">Experience</Link>
+            <Link className='active:text-indigo-600 text-pink-400 'to="/experience">Experience</Link>
           </li>
           <li>
-            <Link className='active:text-indigo-600' to="/project">Project</Link>
+            <Link className='active:text-indigo-600 text-pink-400 ' to="/project">Project</Link>
           </li>
           <li>
-            <Link className='active:text-indigo-600' to="/contact">Contact</Link>
+            <Link className='active:text-indigo-600 text-pink-400 ' to="/contact">Contact</Link>
           </li>
-        </ul>
+        </motion.ul>
 
         <motion.div
           variants={iconVariants(2.5)}
           initial='initial'
           animate='animate'
-          className='m-8 flex items-center justify-center gap-4 text-2xl'
-        >
-          <FaLinkedin />
+          className='m-8 flex items-center justify-center gap-4 text-2xl'>
+          <div className='text-sky-400'><FaLinkedin /></div>
           <FaGithub />
-          <FaTwitter />
-          <FaInstagram />
+        <div className='text-blue-600'> <FaTwitter /></div> 
+        <div className='text-pink-600'><FaInstagram /></div>
         </motion.div>
       </nav>
       <Outlet />
