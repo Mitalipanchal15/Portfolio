@@ -4,7 +4,8 @@ import {motion} from "framer-motion";
 
 const About = () => {
   return (
-    <div className='border-b border-neutral-900 pb-4'>
+    
+    <div className='border-b border-neutral-900 pb-4 '>
         <motion.h1
          whileInView={{y:0, opacity: 1}}
          initial={{y:-100, opacity: 0}}
@@ -39,6 +40,7 @@ const About = () => {
             </motion.div>
         </div>
     </div>
+  
   );
 };
 
