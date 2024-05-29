@@ -24,9 +24,9 @@ const Contact = () => {
             whileInView={{x:0, opacity: 1}}
             initial={{x:100, opacity: 0}}
             transition={{duration: 1}}
-            className='my-4'>9429825641</motion.p>
+            className='my-4'>1234567890</motion.p>
 
-            <a href='#' className=' active:text-indigo-600 underline'>mitalipanchal111@gmail.com</a>
+            <a href='#' className=' active:text-indigo-600 underline'>mitalipanchal1507@gmail.com</a>
             {/* hover:text-indigo-600 */}
 
 
