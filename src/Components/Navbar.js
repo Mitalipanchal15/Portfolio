@@ -4,6 +4,8 @@ import { Outlet, Link } from 'react-router-dom';
 import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
+//Hello Mitali
+
 const iconVariants = (duration) => ({
   initial: { y: -10 },
   animate: {
