@@ -1,6 +1,3 @@
-
-// import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import About from "./Components/About";
@@ -8,6 +5,7 @@ import Technologies from "./Components/Technologies";
 import Experience from "./Components/Experience";
 import Project from "./Components/Project";
 import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -33,25 +31,14 @@ function App() {
      [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]"></div> */}
 
     <div className="container mx-auto px-8">
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Navbar />}>
-          <Route path="/Hero" element={<Hero />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Technologies" element={<Technologies />} />
-          <Route path="/Experience" element={<Experience />} />
-          <Route path="/Project" element={<Project />} />
-          <Route path="*" element={<Contact />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-       {/* <Navbar/>
+       <Navbar/>
        <Hero/>
        <About/>
        <Technologies/>
        <Experience/>
        <Project/>
-       <Contact/> */}
+       <Contact/>
+       <Footer/>
     </div>
   </div>
 

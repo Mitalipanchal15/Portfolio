@@ -1,11 +1,11 @@
 import React from 'react';
-import projectImage from './Assets/prj.png';
+import projectImage from './Assets/project.png';
 
 import {motion} from 'framer-motion';
 
 const Project = () => {
   return (
-    <div className='border-b border-neutral-900 pb-4'>
+    <div className='border-b border-neutral-900 pb-4'id='project'>
         <motion.h1 
           whileInView={{y:0, opacity: 1}}
           initial={{y:-100, opacity: 0}}

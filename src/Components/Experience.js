@@ -2,7 +2,7 @@ import React from 'react';
 import {motion} from 'framer-motion';
 const Experience = () => {
   return (
-    <div className='border-b border-neutral-900 pb-4'>
+    <div className='border-b border-neutral-900 pb-4' id='experience'>
       <motion.h1
        whileInView={{y:0, opacity: 1}}
        initial={{y:-100, opacity: 0}}
